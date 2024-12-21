@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lineWrap{
+    @apply w-16 h-16 m-auto border border-green-500 justify-items-center pt-3 rounded-md
+}
+/*Not pressed*/
+.top{
+    @apply bg-black w-12 h-2 relative top-0 transition-all duration-500
+}
+.center{
+    @apply bg-black w-12 h-2 opacity-100 relative top-2 transition-all duration-500
+}
+.bot{
+    @apply bg-black w-12 h-2 relative top-4 transition-all duration-500
+}
+/*Pressed*/
+.lineTop{
+    @apply relative bg-green-500 w-12 h-2 top-4 rotate-45 transition-all duration-500
+}
+.lineCenter{
+    @apply relative bg-green-500 w-12 h-2 top-2 opacity-0 transition-all duration-500
+}
+.lineBot{
+    @apply relative bg-green-500 w-12 h-2 top-0 rotate-[-45deg] transition-all duration-500
+}
